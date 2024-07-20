@@ -12,6 +12,8 @@ app.use(cors());
 const corsOptions = {
   origin: "https://669bebf212f07f0a30b37b07--stirring-fox-cbfc00.netlify.app",
   credentials: true, // This allows the server to accept cookies and credentials
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
