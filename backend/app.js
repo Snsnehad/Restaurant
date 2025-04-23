@@ -25,6 +25,9 @@ app.use(
     credentials: true, // Allow credentials
   })
 );
+app.get("/", (req, res) => {
+  res.send("Restaurant API is working! 🍽️🚀");
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
